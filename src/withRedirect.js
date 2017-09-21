@@ -7,7 +7,7 @@ const withRedirect = (predicate, redirect) => BaseComponent => {
   class WithRedirect extends Component {
     componentWillReceiveProps (nextProps) {
       if (predicate(nextProps)) {
-        redirect()
+        redirect(nextProps)
       }
     }
 
