@@ -1,6 +1,6 @@
 {
   "name": "@coderbox/hocs",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A collection of Higher-Order Components for React",
   "main": "index.js",
   "scripts": {
@@ -35,11 +35,12 @@
     "standard": "^10.0.2"
   },
   "dependencies": {
+    "jwt-decode": "^2.2.0",
     "lodash": "^4.17.4",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.x.x"
   }
 }
