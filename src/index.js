@@ -2,6 +2,7 @@ import withTheme from './withTheme'
 import withStack from './withStack'
 import withRedirect from './withRedirect'
 import withToken from './withToken'
+import withPending from './withPending'
 import didMount from './didMount'
 
 export {
@@ -9,5 +10,6 @@ export {
   withStack,
   withTheme,
   withRedirect,
-  withToken
+  withToken,
+  withPending
 }
