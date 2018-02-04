@@ -1,8 +1,8 @@
-import React from 'react'
-import { setDisplayName, wrapDisplayName, createEagerFactory } from 'recompose'
+import React, { createFactory } from 'react'
+import { setDisplayName, wrapDisplayName } from 'recompose'
 
 export default (fn) => (BaseComponent) => {
-  const factory = createEagerFactory(BaseComponent)
+  const factory = createFactory(BaseComponent)
 
   class DidMount extends React.Component {
     componentDidMount () {

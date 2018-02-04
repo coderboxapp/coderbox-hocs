@@ -1,11 +1,11 @@
 import decode from 'jwt-decode'
-import { Component } from 'react'
-import { createEagerFactory, setDisplayName, wrapDisplayName } from 'recompose'
+import React, { createFactory } from 'react'
+import { setDisplayName, wrapDisplayName } from 'recompose'
 
 const withToken = (key) => (BaseComponent) => {
-  const factory = createEagerFactory(BaseComponent)
+  const factory = createFactory(BaseComponent)
 
-  class WithToken extends Component {
+  class WithToken extends React.Component {
     componentWillReceiveProps (nextProps) {
       let token = nextProps.token
 
